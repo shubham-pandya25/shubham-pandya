@@ -19,7 +19,7 @@
         <junit.version>5.10.2</junit.version>
     </properties>
 
-    <!-- Ensure consistent Selenium dependencies -->
+    
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -34,20 +34,20 @@
 
     <dependencies>
 
-        <!-- Appium -->
+        
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>${appium.version}</version>
         </dependency>
 
-        <!-- Selenium (version controlled by BOM above) -->
+        
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
         </dependency>
 
-        <!-- JUnit 5 -->
+       
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -55,7 +55,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Simple logger (helps debug Appium issues) -->
+        
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
@@ -69,7 +69,7 @@
     <build>
         <plugins>
 
-            <!-- Ensure JUnit 5 runs correctly -->
+          
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
