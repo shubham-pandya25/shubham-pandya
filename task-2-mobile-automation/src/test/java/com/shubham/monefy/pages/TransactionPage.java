@@ -12,7 +12,7 @@ public class TransactionPage {
             AppiumBy.androidUIAutomator("new UiSelector().textContains(\"CHOOSE CATEGORY\")");
 
     private final By amountText =
-            AppiumBy.id("com.monefy.app.lite:id/amount_text"); // marker for transaction screen
+            AppiumBy.id("com.monefy.app.lite:id/amount_text"); 
 
     public TransactionPage(AndroidDriver driver) {
         this.driver = driver;
